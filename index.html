@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Finder</title>
+</head>
+<body>
+
+    <script>
+        function Product() {
+            var p = 1;
+            var n = document.form1.text1.value;
+            for (var i = 1; i <= n; i++) {
+                p *= i;
+            }
+            document.form1.text2.value = p;
+        }
+    </script>
+
+    <center>
+        <form name="form1">
+            <label for="txt1">Enter the limit &nbsp;&nbsp;</label>
+            <input type="text" id="txt1" name="text1"><br><br>
+            <label for="text2">Product Up to the limit &nbsp;&nbsp;</label>
+            <input type="text" id="txt2" name="text2"><br><br>
+            <input type="button" value="Show" onclick="Product()">
+        </form>
+    </center>
+    
+</body>
+</html>
